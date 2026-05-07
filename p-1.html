@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="view-port" content="width=device-width,initial=1.0">
+        <title>Personal-1</title>
+        <link  rel="stylesheet" href="./p-1.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>Vrindavan’s Beloved</h1>
+        <div id="img-div">
+            <img id="one" src="./Assests/Flutekrish.jpg" alt="krishna playing flute" />
+            <img id="two" src="./Assests/NatKrish.jpg" alt="Krishna spending time in nature" />
+            <img id="three" src="./Assests/KuruKrish.jpg" alt="krishna Leading war" />
+        </div>
+        <div id="info-div">
+            <p>
+             "Lord Krishna, the eighth avatar of Vishnu, represents the ultimate embodiment of love, wisdom, and divine playfulness. From the mischievous 'Makhan Chor' of Gokul to the profound philosopher of the Bhagavad Gita, his life serves as a guide for humanity. His iconic flute music is said to draw all souls toward the divine, transcending the material world. These images capture his diverse forms—reminding us that divinity exists in both the simple joys of childhood and the deep complexities of duty."
+            </p>
+        </div>
+        <div id="img-link">
+         <img id="four" src="./Assests/ImgLink.jpg" alt="flute" />
+         <audio id="kri" src="./Assests/Flute Mp3.mp3"></audio>
+         <script>
+          const image = document.getElementById("four");
+          const music = document.getElementById("kri");
+    
+          image.addEventListener("click", () => {
+          if (music.paused) {
+            music.play();   // Play if paused
+          } else {
+            music.pause();  // Pause if playing
+          }
+          });
+         </script>
+        </div>
+    </body>
+</html>
